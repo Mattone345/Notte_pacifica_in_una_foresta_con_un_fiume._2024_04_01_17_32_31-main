@@ -2,6 +2,19 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-color: rgb(255, 217, 0);
+}
+
 canvas {
   display: block;
+}
+
+section.presentation{
+  position: fixed;
+  top:100px;
+  color:blueviolet;
+  font-size: 1.5rem;
+  
 }

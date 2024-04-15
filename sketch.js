@@ -140,8 +140,9 @@ function ripNuvole() {
   }
 }
 
-function setup() {
+function setup(){
   Mondo();
+  getOrbit().autoRotate=true;
 
   Alberi();
 
