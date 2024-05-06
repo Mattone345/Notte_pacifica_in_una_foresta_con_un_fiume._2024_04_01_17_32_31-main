@@ -11,7 +11,6 @@ let n4;
 function Mondo() {
   hideGrid();
   createCanvas3D(windowWidth, windowHeight);
-  background3D("#16161D");
 
   lato = 75;
   align(BOTTOM);
@@ -29,7 +28,7 @@ function Mondo() {
 
   diffuse("#9E9E9E");
   let luna = sphere(0, 55, lato, 9);
-  setCamera(-lato / 1.2, 23, -lato / 1.2);
+  setCamera(-lato / 1.2 - 10, 35, -lato / 1.2 - 5);
 }
 
 function Alberi() {
@@ -102,7 +101,7 @@ function ripAlberi() {
 
 function Nuvole() {
   nuvola = beginGroup();
-  diffuse("FFFFFF");
+  diffuse("#b3b3b3");
   n1 = sphere(-1.25, 5, 0, 0.5);
   dimensioni = random(0.5, 1.5);
   n2 = sphere(1, 4.8, 0, 0.5);
@@ -140,9 +139,9 @@ function ripNuvole() {
   }
 }
 
-function setup(){
+function setup() {
   Mondo();
-  getOrbit().autoRotate=true;
+  getOrbit().autoRotate = true;
 
   Alberi();
 
@@ -158,8 +157,8 @@ function setup(){
   lato = box(0, 0, 0, lato, 1, lato);
 }
 
-function draw() {}
+function draw() { }
 
-function windowResized(){
+function windowResized() {
   resizeCanvas3D(windowWidth, windowHeight);
 }
